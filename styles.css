@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.svg-container {
+    width: 150px;
+}
+
+.line {
+    stroke: #3498db;
+    stroke-width: 3;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: dash 2s linear forwards;
+}
+
+.text {
+    fill: #333; /* Text color */
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    animation: fadeIn 2s linear forwards; /* Text fadeIn animation */
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
